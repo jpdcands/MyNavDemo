@@ -39,7 +39,7 @@ fun Home(navController: NavHostController) {
                 Text(text = "UpperBody")
             }
             Button(
-                onClick = {},
+                onClick = { navController.navigate("Abs")},
                 Modifier.padding(20.dp),
                 shape = RoundedCornerShape(20.dp),
                 border = BorderStroke(3.dp, Color.Black),
@@ -51,7 +51,7 @@ fun Home(navController: NavHostController) {
                 Text(text = "Abs")
             }
             Button(
-                onClick = {},
+                onClick = { navController.navigate("Balance")},
                 Modifier.padding(20.dp),
                 shape = RoundedCornerShape(20.dp),
                 border = BorderStroke(3.dp, Color.Black),
@@ -68,7 +68,7 @@ fun Home(navController: NavHostController) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Button(
-                onClick = {},
+                onClick = { navController.navigate("LowerBody")},
                 Modifier.padding(20.dp),
                 shape = RoundedCornerShape(20.dp),
                 border = BorderStroke(3.dp, Color.Black),
@@ -80,7 +80,7 @@ fun Home(navController: NavHostController) {
                 Text(text = "Lower Body")
             }
             Button(
-                onClick = {},
+                onClick = { navController.navigate("Cardio")},
                 Modifier.padding(20.dp),
                 shape = RoundedCornerShape(20.dp),
                 border = BorderStroke(3.dp, Color.Black),
@@ -92,7 +92,7 @@ fun Home(navController: NavHostController) {
                 Text(text = "Cardio")
             }
             Button(
-                onClick = {},
+                onClick = { navController.navigate("Other")},
                 Modifier.padding(20.dp),
                 shape = RoundedCornerShape(20.dp),
                 border = BorderStroke(3.dp, Color.Black),

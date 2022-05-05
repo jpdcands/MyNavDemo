@@ -13,9 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.mynavdemo.screens.Home
-import com.example.mynavdemo.screens.LowerBody
-import com.example.mynavdemo.screens.UpperBody
+import com.example.mynavdemo.screens.*
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,6 +48,18 @@ fun MainScreen() {
         }
         composable(NavRoutes.LowerBody.route) {
             LowerBody(navController = navController)
+        }
+        composable(NavRoutes.Cardio.route) {
+            Cardio(navController = navController)
+        }
+        composable(NavRoutes.Abs.route) {
+            Abs(navController = navController)
+        }
+        composable(NavRoutes.Balance.route) {
+            Balance(navController = navController)
+        }
+        composable(NavRoutes.Other.route) {
+            Other(navController = navController)
         }
     }
 }

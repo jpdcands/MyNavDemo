@@ -20,7 +20,7 @@ fun LowerBody(navController: NavHostController) {
 
     ) {
         Text(
-            text = "Upper Body",
+            text = "Lower Body",
             color = Color.Red,
             fontSize = MaterialTheme.typography.h3.fontSize,
             fontWeight = FontWeight.Bold
